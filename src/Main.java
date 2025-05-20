@@ -5,19 +5,23 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<OsobniVozidlo> evidence = new ArrayList<>();
+        Evidence evidence = new Evidence();
 
-        OsobniVozidlo vozidlo = new OsobniVozidlo(5,2);
-        vozidlo.zmenPocetOsob(4);
-
-
-        List<OsobniVozidlo> seznamVozidel = new ArrayList<>();
-        seznamVozidel.add(new OsobniVozidlo());
-        seznamVozidel.add(new Dodavka());
-
-        System.out.println(seznamVozidel.get(1).getClass());
-        System.out.println(seznamVozidel.get(0).getClass());
+        OsobniVozidlo osobniVozidlo1 = new OsobniVozidlo();
+        OsobniVozidlo osobniVozidlo2 = new OsobniVozidlo();
+        Dodavka dodavka1 = new Dodavka();
+        Dodavka dodavka2 = new Dodavka();
 
 
+
+        evidence.add(osobniVozidlo1);
+        evidence.add(osobniVozidlo2);
+        evidence.add(dodavka1);
+        evidence.add(dodavka2);
+
+        System.out.println("Počet sedadel: ");
+        evidence.vypisPocetSedadel();
+        System.out.println("\n Hmotnosti nákladů: ");
+        evidence.vypisHmotnostiNakladu();
     }
 }

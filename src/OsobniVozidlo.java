@@ -1,5 +1,5 @@
 public class OsobniVozidlo {
-    private final int pocetSedadel; //final - atribut je neměnný
+    private /* final */ int pocetSedadel; //final - atribut je neměnný
     private int pocetOsob;
 
     public OsobniVozidlo(int pocetSedadel, int pocetOsob) {
@@ -24,6 +24,15 @@ public class OsobniVozidlo {
     }
     public int getPocetOsob() {
         return pocetOsob;
+    }
+    public int getHmotnostNakladu() {
+        return 0;
+    }
+    public void setPocetOsob(int pocetOsob) {
+        this.pocetOsob = pocetOsob;
+    }
+    public void setPocetSedadel(int pocetSedadel) {
+        this.pocetSedadel = pocetSedadel;
     }
 
     // moje řešení metody pro změnu počtu osob

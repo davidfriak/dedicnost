@@ -9,7 +9,7 @@ public class Dodavka extends OsobniVozidlo{
 
         int hmotnostOsob = 120*getPocetOsob();
         if (hmotnostOsob + hmotnostNakladu > uzitecnaHmotnost) {
-            throw new RuntimeException("Hmotnost nákladu a hmotnost osob nesmí být větší jak užitečná hmotnost");
+            throw new RuntimeException("Hmotnost nákladu a hmotnost osob nesmí být větší než užitečná hmotnost");
         }
     }
 
